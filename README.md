@@ -1,24 +1,14 @@
 # Identicon
 
-**TODO: Add description**
+Command line app to learn more about Elixir. 
 
-## Installation
+## This app
+This app generates a png based on a string value given by the user. It creates an identicon based on hex values for each character in the name. After creating the grid and applying color, it creates a file named by the user input. 
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add `identicon` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:identicon, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `identicon` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:identicon]]
-    end
-    ```
-
+## Usage
+* Fork this repo
+* Make sure you have Elixir and Erlang installed
+* Open up the command console on the app with `iex -S mix`
+* Run `Identicon.main("Alchemist")` (or whatever name you choose)
+* You should see a console response of `:ok`. Close the console.
+* You should see your <name>.png file in the current directory
